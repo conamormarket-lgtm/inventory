@@ -4,7 +4,6 @@
 export const INITIAL_USERS = [
     { username: 'admin', password: '123', role: 'admin', name: 'Administrador' },
     { username: 'Jampier', password: '123', role: 'operator', name: 'Jampier' },
-    { username: 'gatobunker', password: '123', role: 'operator', name: 'gatobunker' },
     { username: 'Raul', password: '123', role: 'operator', name: 'Raul' }
 ];
 
@@ -33,4 +32,5 @@ export const COLORS = [
 ];
 
 export const APP_NAME = "Control de Inventario - Producción";
+
 
