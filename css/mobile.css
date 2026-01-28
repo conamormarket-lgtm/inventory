@@ -1,0 +1,46 @@
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    #btn-mobile-menu {
+        display: block !important;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: -300px;
+        top: 0;
+        bottom: 0;
+        z-index: 10000;
+        margin: 0;
+        height: 100vh;
+        width: 280px;
+        transition: transform 0.3s ease;
+        background: var(--bg-dark);
+        /* Ensure opacity */
+        box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .sidebar.active {
+        transform: translateX(300px);
+    }
+
+    .main-content {
+        padding-top: 80px;
+        /* Space for fixed button */
+    }
+
+    /* Overlay when sidebar is open */
+    .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+        display: none;
+    }
+
+    .sidebar-overlay.active {
+        display: block;
+    }
+}
